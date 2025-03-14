@@ -3,15 +3,15 @@
 
 | **Week** | **Content**                                               | **Lectures** | **Exercise** |
 | -------- | --------------------------------------------------------- | ------------ | ------------ |
-| 1        | introduction, streamlit                                   | 00-01       |              |
-| 2        | duck db                                                   | 02-04           |              |
-| 3        | dlt                                                       |              |              |
-| 4        | dbt                                                       |              |              |
-| 5        | snowflake                                                 |              |              |
-| 6        | dagster                                                   |              |              |
-| 7        | AI models, LLM                                            |              |              |
-| 8        | git collaboration, project                                |              |              |
-| 9        | project                                                   |              |              |
-| 10       | project                                                   |              |              |
-| 11       | project                                                   |              |              |
-| 12       | docker, cloud/deployment                        |              |              |
+| 12       | introduction, streamlit                                   | 00-01        |      1       |
+| 13       | duck db                                                   |              |              |
+| 14       | dlt                                                       |              |              |
+| 15       | dbt core                                                  |              |              |
+| 16       | dbt core                                                  |              |              |
+| 17       | github for collaboration, project info                    |              |              |
+| 18       | project, LLM                                              |              |              |
+| 19       | project, snowflake                                        |              |              |
+| 20       | project, dagster                                          |              |              |
+| 21       | project, docker/cloud deployment                          |              |              |
+| 22       | project presentation and submission                       |              |              |
+| 23       | buffer/komplettering                                      |              |              |
