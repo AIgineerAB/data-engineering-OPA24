@@ -4,11 +4,8 @@ Video on dlt theory :point_down:
 
 [![theory on dlt](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_intro_video.png?raw=true)](https://youtu.be/m4zrj5ZUWs4)
 
-Video on dlt setup part 1 - initiate dlt project :point_down:
-[TO BE ADDED]
-
-Video on dlt setup part 2 - loading csv file to duckdb :point_down:
-[TO BE ADDED]
+Video on dlt setup and loading csv file to duckdb :point_down:
+[link](https://www.youtube.com/watch?v=qktFiYMYXbQ&t=1015s)
 
 ## Virtual environment
 
@@ -40,7 +37,7 @@ source .venv/bin/activate
 Installing packages into your uv virtual environment: 
 
 ```bash
-uv pip install "dlt[duckdb]" ipykernel pandas 
+uv pip install "dlt[duckdb]" ipykernel pandas "dlt[parquet]"
 ```
 
 > [!NOTE]
@@ -58,6 +55,9 @@ Navigate to your code directory and initialize a dlt project by typing
 ```bash
 dlt init load_duckdb duckdb
 ```
+
+> [!NOTE]
+> Alternatively, you can create all files from scratch without ```dlt init```
 
 Place the csv data file in the data folder under the course repo. Then change the script file according to my code in `load_csv_pipeline.py`. As duckdb is a file database, we do not need to configure secrets and connections normally required for other database servers. We will be seeing extra configurations with these when we start to use snowflake as the data warehouse instead. 
 
