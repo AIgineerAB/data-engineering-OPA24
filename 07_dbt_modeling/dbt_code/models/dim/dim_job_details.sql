@@ -1,15 +1,14 @@
-WITH src_job_details AS (SELECT * FROM {{ ref('src_job_details') }})
+with job_details as (select * from {{ ref('src_job_details') }})
 
-
-
-SELECT
-    {{ dbt_utils.generate_surrogate_key(['id','headline']) }} AS job_details_id,
+select
+    {{ dbt_utils.generate_surrogate_key(['id']) }} as job_details_id,
     headline,
     description,
-    description_html_formatted,
-    employment_type,
-    duration, 
-    salary_type, 
+    description_html,
+    coalesce(duration, 'ej angiven') as duration,
+    salary_type,
+    salary_description,
+    working_hours_type,
     scope_of_work_min,
     scope_of_work_max
-FROM src_job_details
+from job_details

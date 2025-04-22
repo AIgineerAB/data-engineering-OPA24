@@ -6,7 +6,7 @@ name: 'dbt_code'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'dbt_code'
+profile: "job_ads_project_demo"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -30,20 +30,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  dbt_code:
+  job_ads_project_demo:
     +materialized: view
 
-    src: 
+    src:
       +materialized: ephemeral
-      +schema: warehouse
 
-    dim: 
-      +schema: warehouse
+    dim:
+      +schema: refined
 
-    fct: 
-      +schema: warehouse
+    fct:
+      +schema: refined
 
-    mart: 
+    marts:
       +schema: marts
-
-

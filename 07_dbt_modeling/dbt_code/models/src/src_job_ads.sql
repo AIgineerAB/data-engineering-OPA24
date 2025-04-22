@@ -1,10 +1,11 @@
-WITH stg_job_ads AS (SELECT * FROM {{ source('job_ads', 'stg_data_ads') }})
+with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
-SELECT
+select
+    occupation__label,
     id,
-    headline, 
-    number_of_vacancies AS vacancies, 
-    relevance, 
+    employer__workplace,
+    workplace_address__municipality,
+    number_of_vacancies as vacancies,
+    relevance,
     application_deadline
-FROM stg_job_ads
-ORDER BY application_deadline ASC
+from stg_job_ads
