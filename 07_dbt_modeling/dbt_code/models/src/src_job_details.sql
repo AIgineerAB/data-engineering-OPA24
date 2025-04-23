@@ -1,4 +1,4 @@
-with stg_job_details as (select * from {{ source('job_ads', 'stg_ads') }})
+with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
     id,
@@ -11,4 +11,4 @@ select
     working_hours_type__label as working_hours_type,
     scope_of_work__min as scope_of_work_min,
     scope_of_work__max as scope_of_work_max
-from stg_job_details
+from stg_job_ads
