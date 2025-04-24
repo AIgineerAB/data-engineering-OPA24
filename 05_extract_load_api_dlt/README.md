@@ -2,13 +2,18 @@
 
 Video on dlt theory to extract and load from API to duckdb :point_down: [TO BE ADDED]
 
-Video on EDA of jobtech API :point_down:
-[![EDA on jobtech API](https://github.com/kokchun/assets/blob/main/data_warehouse/EDA_job_ads_video.png?raw=true)](https://youtu.be/HB6Y8eMQ8w0)
+**Video on EDA of jobtech API** :point_down:
 
-Video on extract and loading data from jobtech API to duckdb with dlt :point_down:
-[TO BE ADDED]
+<a href="https://youtu.be/HB6Y8eMQ8w0" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/data_warehouse/EDA_job_ads_video.png?raw=true" alt="EDA jobtech" width="600">
+</a>
 
 
+**Video on extract and loading data from jobtech API to duckdb with dlt** :point_down:
+
+<a href="https://www.youtube.com/watch?v=Sy0GxQ4xlgU&list=PLpHkXU1Ab_H-Gdq3OG0eBlDZTHUT4q3Z8&index=2" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_api.png?raw=true" alt="dlt api" width="600">
+</a>
 
 Read [dlthub documentation for loading data from API](https://dlthub.com/devel/tutorial/load-data-from-an-api). 
 
