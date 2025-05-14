@@ -11,7 +11,7 @@
 | 17       | github for collaboration, project info                    |              |              |
 | 18       | project, LLM                                              |              |              |
 | 19       | project, snowflake                                        |              |              |
-| 20       | project, dagster                                          |              |              |
-| 21       | project, docker/cloud deployment                          |              |              |
-| 22       | project presentation and submission                       |              |              |
-| 23       | buffer/komplettering                                      |              |              |
+| 20       | project, dagster intro                                    |              |              |
+| 21       | project, dagster                                          |              |              |
+| 22       | project                                                   |              |              |
+| 23       | project presentation                                      |              |              |
