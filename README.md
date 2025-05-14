@@ -12,6 +12,6 @@
 | 18       | project, LLM                                              | 09           |   project    |
 | 19       | project, snowflake                                        | 10-13        |   project    |
 | 20       | project, dagster intro                                    | 14           |   project    |
-| 21       | project, dagster                                          | 15           |   project    |
+| 21       | project, dagster with dlt and dbt                         | 15           |   project    |
 | 22       | project                                                   | -            |   project    |
 | 23       | project presentation                                      | -            |      -       |
