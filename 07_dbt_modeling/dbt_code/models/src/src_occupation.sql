@@ -7,4 +7,4 @@ select
     occupation__label as occupation,
     occupation_group__label as occupation_group,
     occupation_field__label as occupation_field,
-from stg_job_ads
+from stg_job_ads 

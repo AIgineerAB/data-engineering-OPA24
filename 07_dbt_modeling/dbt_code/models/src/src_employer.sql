@@ -10,4 +10,4 @@ select
     workplace_address__city as workplace_city,
     workplace_address__postcode as workplace_postcode,
     employer__url as employer_url,
-from stg_job_ads
+from stg_job_ads 

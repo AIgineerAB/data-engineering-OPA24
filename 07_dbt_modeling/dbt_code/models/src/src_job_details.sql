@@ -1,10 +1,11 @@
 with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
 select
-    id,
+    id,   
     headline,
     description__text as description,
     description__text_formatted as description_html,
+    employment_type__label as employment_type,
     duration__label as duration,
     salary_type__label as salary_type,
     salary_description, 

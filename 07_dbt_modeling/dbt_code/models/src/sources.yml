@@ -3,4 +3,4 @@ sources:
     schema: staging
     tables:
       - name: stg_ads
-        identifier: job_ads
+        identifier: data_field_job_ads
