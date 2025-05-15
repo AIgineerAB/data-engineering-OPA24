@@ -1,0 +1,44 @@
+About the job
+SEB is more than just a bank with an IT function. We are a progressive tech company powered by innovation and fuelled by collaboration. From Java to AI and everything in between, we offer you an impressive tech stack and several technology paths. Together we're innovating for a sustainable society and building the tech arena of the future, a welcoming space for everyone.
+
+Join Our Mission Against Financial Crime
+
+Would you like to work with a team of highly skilled Software Engineers to build solutions that empower complex investigations? We’re looking for an experienced Data Engineer to join our Financial Crime Prevention team—where data, technology, and purpose align to detect and prevent bad actors.
+
+About The Role
+
+As a Data Engineer in the Financial Crime Prevention team, you will be responsible for developing and maintaining new technical capabilities in a smart way to allow us to detect bad actors. Here you will have a chance to make a difference and work with challenging tasks. You will have great opportunities to both develop and take further steps in your career working within a highly collaborative environment.
+
+To Thrive In This Role, We Believe You Have
+
+Experience in large scale Data Engineering projects
+Experience in Streaming technology such as Data Flow
+Experience of batch technology such as Data Proc
+Experience in Schema Registry
+Experience in Infrastructure as Code such as Terraform
+Knowledge in Graph DB is an advantage
+Analytical mindset and ability to solve complex technical problems 
+Passion for challenges to drive your personal development and professional growth
+Being a team player open for growth and learning is crucially important for the role
+
+What We Offer
+
+Innovative company at the forefront of technology 
+Extensive training and learning opportunities 
+Attractive compensation and benefits 
+Work-life balance 
+Friendly and welcoming culture 
+
+Do you want to be part of SEB? 
+
+Welcome to our inclusive culture, where our shared values inspire and uplift our team. We celebrate diversity and strive to ensure every employee feels seen, heard, and valued.
+
+Since we select candidates continuously, feel free to send in your application today, but no later than 30th of April 2025. If you have questions about the position, please contact rasmus.hallberg@seb.se
+
+Learn more about working at SEB here: www.sebgroup.com/techcareers
+
+It is our fundamental belief that inclusion and diversity is crucial for our future success. We strive to have an inclusive, value-driven culture where employees feel valued, respected and involved irrespective of who they are, what they believe or where they come from.
+
+
+Desired Skills and Experience
+
