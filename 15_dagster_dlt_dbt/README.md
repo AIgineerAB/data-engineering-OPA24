@@ -25,7 +25,6 @@ uv pip install dagster-dlt dagster-dbt
 
 For this dagster pipeline, we are using the dbt profile, *dbt_code_for_orchestration*, in `profiles.yml`:
 
-*profiles.yml*: 
 ![](../figures/dbt_profiles.png)
 
 
