@@ -4,17 +4,20 @@
 #                      #
 # ==================== #
 
-from pathlib import Path
-from dagster_dbt import DbtCliResource, DbtProject, dbt_assets
+#import dagster packages
 import dagster as dg
-import dlt
+from dagster_dbt import DbtCliResource, DbtProject, dbt_assets
 from dagster_dlt import DagsterDltResource, dlt_assets
 
-# import a standalone python script outside the orchestration working directory
+import dlt
+
+from pathlib import Path
+
+# import a standalone dlt python script outside the orchestration working directory
 import sys
 sys.path.insert(0, '../data_extract_load')
 from jobads_pipeline import jobads_source
-#sys.path.pop(0) #not necessary to clean up sys path
+#sys.path.pop(0) #not necessary to clean up sys path because there is no more moduel to be imported
  
 # data warehouse directory
 db_path = str(Path(__file__).parents[1] / "data_warehouse/ads.duckdb")
@@ -25,8 +28,6 @@ db_path = str(Path(__file__).parents[1] / "data_warehouse/ads.duckdb")
 #       dlt Asset      #
 #                      #
 # ==================== #
-
-#dlt.config["load.truncate_staging_dataset"] = True
 
 dlt_resource = DagsterDltResource()
 

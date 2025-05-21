@@ -3,7 +3,7 @@ import requests
 import json
 from pathlib import Path
 
-
+# for illustration purpose, we only request data for one occupation field
 params = {"limit": 100, "occupation-field": "MVqp_eS8_kDZ"}
 
 
@@ -13,6 +13,7 @@ def _get_ads(url_for_search, params):
     response.raise_for_status()  # check for http errors
     return json.loads(response.content.decode("utf8"))
 
+# this is for removing data in the default staging_staging scheme created by dlt
 dlt.config["load.truncate_staging_dataset"] = True
 
 @dlt.resource(table_name = "hits",
@@ -46,7 +47,7 @@ def get_hits(params):
 
         offset += limit
 
-
+# to work with dagster, we need to create a dlt source to include the dlt resource
 @dlt.source
 def jobads_source():
     return get_hits(params)
