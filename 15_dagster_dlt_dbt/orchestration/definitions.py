@@ -54,13 +54,16 @@ def dlt_load(context: dg.AssetExecutionContext, dlt: DagsterDltResource): #need 
 dbt_project_directory = Path(__file__).parents[1] / "data_transformation"
 # Define the path to your profiles.yml file (in your home directory)
 profiles_dir = Path.home() / ".dbt"  
+
+#instantiate a dagster dbt project object with the paths above
 dbt_project = DbtProject(project_dir=dbt_project_directory,
                          profiles_dir=profiles_dir)
+
 # References the dbt project object
 dbt_resource = DbtCliResource(project_dir=dbt_project)
+
 # Compiles the dbt project & allow Dagster to build an asset graph
 dbt_project.prepare_if_dev()
-
 
 # Yields Dagster events streamed from the dbt CLI
 @dbt_assets(manifest=dbt_project.manifest_path,) #access metadata of dbt project so that dagster understand structure of the dbt project
@@ -86,7 +89,7 @@ job_dbt = dg.define_asset_job("job_dbt", selection=dg.AssetSelection.keys("stagi
 #schedule for the first job
 schedule_dlt = dg.ScheduleDefinition(
     job=job_dlt,
-    cron_schedule="40 8 * * *" #UTC
+    cron_schedule="17 8 * * *" #UTC
 )
 
 # ==================== #
@@ -100,6 +103,7 @@ schedule_dlt = dg.ScheduleDefinition(
                  job_name="job_dbt")
 def dlt_load_sensor():
     yield dg.RunRequest()
+
 
 # ==================== #
 #                      #
